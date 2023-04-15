@@ -1,0 +1,88 @@
+#sectionConainer {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+//   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  #modelDiv {
+    padding-top: 15vh;
+    text-align: center;
+  }
+  #downArrow {
+    margin-top: 20px;
+    height: 40px;
+    color: white;
+    animation: animateDown infinite 1.5s;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    text-align: center;
+    #iconArrow {
+        color: white;
+        overflow-x: hidden;
+      background-color: white;
+      border-radius: 50%;
+    }
+  }
+}
+
+#buttonGroup {
+  text-align: center;
+  margin-bottom: 30px;
+  // display: flex;
+  // justify-content: 'center';
+  // align-items: 'center';
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  #leftButton {
+    cursor: pointer;
+    background-color: rgba(23, 26, 32, 0.8);
+    height: 40px;
+    width: 256px;
+    color: white;
+    border-radius: 100px;
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: none;
+    margin: 8px;
+ :hover{
+}
+}
+#leftButton:hover {
+    background-color: #25272a;
+      
+      
+  }    
+  #rightButton {
+    cursor: pointer;
+    height: 40px;
+    width: 256px;
+    border-radius: 100px;
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: none;
+  }
+}
+@keyframes animateDown {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(5px);
+    }
+    40% {
+        transform: translateY(5px);
+    }
+    60% {
+        transform: translateY(3px);
+    }
+}

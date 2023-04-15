@@ -1,0 +1,84 @@
+#headerContainer {
+  min-height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1;
+  a {
+    text-decoration: none;
+  }
+  #menu {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+  }
+  #menu > p {
+    padding: 0 10px;
+  }
+  #menu > p > a:hover {
+    color: #fff;
+  }
+  #rightMenu {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 410px) {
+        a{
+            display: none;
+        }
+    }
+    #hamIcon{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+  }
+  #rightMenu > a {
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #rightMenu >  a:hover {
+    color: #fff;
+  }
+  #burgerNav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    width: 300px;
+    z-index: 9999;
+    list-style: none;
+    text-align: start;
+    padding: 12px 20px;
+    transition: all 0.5s;
+    li{
+        padding: 20px;
+        font-size: 20px;
+    }
+  div{
+    // border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    #closeIcon{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+  }
+  }
+}
